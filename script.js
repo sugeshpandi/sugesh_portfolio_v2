@@ -11,7 +11,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     let message = document.getElementById("message").value;
 
     let subject = "New Contact Form Message from " + name;
-    let body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+    let body = `Name: ${name} Email: ${email} Message:${message}`;
 
     let mailtoLink = `mailto:sugeshpandisaravana@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
