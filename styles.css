@@ -286,27 +286,29 @@ nav ul li a:hover {
 
 /* About Section */
 .about {
-  text-align: center;
-  padding: 80px 12%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
   background: #f8f9fa;
   color: black;
 }
 
 .about h2 {
-  font-size: 2.8rem;
-  margin-bottom: 25px;
+  font-size: 2rem;
+  margin-bottom: 20px;
   letter-spacing: 1px;
   color: black;
   display: flex;
   border-bottom: 3px solid #ff9800;
   display: inline-block;
   padding-bottom: 5px;
+  text-align: center;
 }
 .about p {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 1.6;
   max-width: 100%;
-  margin: auto;
+  margin-bottom: 20px;
   text-align: justify;
   font-weight: 300;
   color: black;
@@ -316,62 +318,60 @@ nav ul li a:hover {
 .about-info {
   background: #2c3e50;
   border: 3px solid #f39c12;
-  padding: 25px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
-  margin: 10px auto;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-info h3 {
-  font-size: 2rem;
   color: white;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ff9800;
-  padding-bottom: 5px;
-  grid-column: span 2; /* Headings take full width */
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 
 .about-info p {
-  font-size: 1.2rem;
-
   color: white;
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin: 0.5rem 0;
-  text-align: start;
+  font-size: 1rem;
+  margin-bottom: 12px;
 }
 
 .about-info p i {
   font-size: 1.2rem;
   color: #ff9800;
-  min-width: 25px;
+  margin-right: 20px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  #about {
+    padding: 15px;
+    margin: 20px 10px;
+  }
+
+  #about h2 {
+    font-size: 1.7rem;
+  }
   .about-info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 20px; /* Adds some padding to prevent stretching */
+    padding: 20px 15px;
   }
 
   .about-info h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9800;
   }
 
   .about-info p {
-    font-size: .7rem;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
   }
 
   .about-info p i {
-    font-size: .7rem;
+    font-size: 1rem;
+    margin-right: 8px;
   }
 }
 
